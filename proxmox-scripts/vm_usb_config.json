@@ -1,0 +1,34 @@
+{
+  "vms": [
+    {
+      "name": "piro-almalinux0810-vserver-01",
+      "usbs": [
+        {
+          "vidpid": "0403:6014",
+          "serial": "210249B06E36"
+        },
+        {
+          "vidpid": "0403:6014",
+          "serial": "210249B07138"
+        },
+        {
+          "vidpid": "1514:2008",
+          "serial": "0059F4B3"
+        },
+        {
+          "vidpid": "1514:2008",
+          "serial": "0059F8LM"
+        }
+      ]
+    },
+    {
+      "name": "piro-almalinux0810-vserver-02",
+      "usbs": [
+        {
+          "vidpid": "1514:2008",
+          "serial": "30001234"
+        }
+      ]
+    }
+  ]
+}
