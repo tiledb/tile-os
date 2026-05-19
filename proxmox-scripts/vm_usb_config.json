@@ -4,20 +4,28 @@
       "name": "piro-almalinux0810-vserver-01",
       "usbs": [
         {
-          "vidpid": "0403:6014",
-          "serial": "210249B06E36"
-        },
-        {
-          "vidpid": "0403:6014",
-          "serial": "210249B07138"
-        },
-        {
+          "type": "FlashPro5",
           "vidpid": "1514:2008",
-          "serial": "0059F4B3"
+          "serial": "07712",
+          "usb_path": "*"
         },
         {
+          "type": "FlashPro5",
           "vidpid": "1514:2008",
-          "serial": "0059F8LM"
+          "serial": "07573",
+          "usb_path": "*"
+        },
+        {
+          "type": " Digilent HS3",
+          "vidpid": "0403:6014",
+          "serial": "210249B07199",
+          "usb_path": "*"
+        },
+        {
+          "type": " Digilent HS3",
+          "vidpid": "0403:6014",
+          "serial": "210249A1449F",
+          "usb_path": "*"
         }
       ]
     },
@@ -25,8 +33,28 @@
       "name": "piro-almalinux0810-vserver-02",
       "usbs": [
         {
+          "type": " Digilent HS3",
+          "vidpid": "0403:6014",
+          "serial": "210249B07196",
+          "usb_path": "*"
+        },
+        {
+          "type": " Digilent HS3",
+          "vidpid": "0403:6014",
+          "serial": "210249B06E5B",
+          "usb_path": "*"
+        },
+        {
+          "type": "FlashPro5",
           "vidpid": "1514:2008",
-          "serial": "30001234"
+          "serial": "0059F4B3",
+          "usb_path": "*"
+        },
+        {
+          "type": "FlashPro5",
+          "vidpid": "1514:2008",
+          "serial": "0059F8LM",
+          "usb_path": "*"
         }
       ]
     }
