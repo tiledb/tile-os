@@ -16,16 +16,28 @@
           "usb_path": "*"
         },
         {
-          "type": " Digilent HS3",
+          "type": "Digilent HS3",
           "vidpid": "0403:6014",
           "serial": "210249B07199",
           "usb_path": "*"
         },
         {
-          "type": " Digilent HS3",
+          "type": "Digilent HS3",
           "vidpid": "0403:6014",
           "serial": "210249A1449F",
           "usb_path": "*"
+        },
+        {
+          "type": "Digilent HS3",
+          "vidpid": "0403:6014",
+          "serial": "210249BF3134",
+          "usb_path": "*"
+        },
+        {
+          "type": "usbi2c",
+          "vidpid": "16c0:05df",
+          "serial": "*",
+          "usb_path": "3-4.1"
         }
       ]
     },
@@ -33,15 +45,21 @@
       "name": "piro-almalinux0810-vserver-02",
       "usbs": [
         {
-          "type": " Digilent HS3",
+          "type": "Digilent HS3",
           "vidpid": "0403:6014",
           "serial": "210249B07196",
           "usb_path": "*"
         },
         {
-          "type": " Digilent HS3",
+          "type": "Digilent HS3",
           "vidpid": "0403:6014",
           "serial": "210249B06E5B",
+          "usb_path": "*"
+        },
+        {
+          "type": "Digilent HS3",
+          "vidpid": "0403:6014",
+          "serial": "210249BF319C",
           "usb_path": "*"
         },
         {
@@ -55,6 +73,12 @@
           "vidpid": "1514:2008",
           "serial": "0059F8LM",
           "usb_path": "*"
+        },
+        {
+          "type": "usbi2c",
+          "vidpid": "16c0:05df",
+          "serial": "*",
+          "usb_path": "3-4.2"
         }
       ]
     }

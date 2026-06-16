@@ -83,8 +83,18 @@ for vm_name in $VM_NAMES; do
         found_path=""
 
         if [[ "$target_path" != "*" ]]; then
-            # Verify the hardcoded path exists
-            [ -d "/sys/bus/usb/devices/$target_path" ] && found_path="$target_path"
+            dev_dir="/sys/bus/usb/devices/$target_path"
+
+            if [ -d "$dev_dir" ] &&
+            [ -f "$dev_dir/idVendor" ] &&
+            [ -f "$dev_dir/idProduct" ]; then
+
+                vp="$(cat "$dev_dir/idVendor"):$(cat "$dev_dir/idProduct")"
+
+                if [[ "$vp" == "$vidpid" ]]; then
+                    found_path="$target_path"
+                fi
+            fi
         else
             # Search by VIDPID and Serial
             for dev_dir in /sys/bus/usb/devices/[0-9]*; do
