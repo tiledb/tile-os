@@ -1,0 +1,11 @@
+et-xmlfile
+mysql
+mysql-connector-python
+mysqlclient
+numpy
+openpyxl
+pandas
+protobuf
+python-dateutil
+pytz
+six
