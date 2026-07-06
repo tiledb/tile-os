@@ -56,7 +56,7 @@ EOF
     systemctl daemon-reload
     systemctl enable --now "${SERVICE_NAME}.timer"
     echo "Running first backup..."
-    systemctl start mariadb-backup.service
+    systemctl start mariadb_backup.service
 
     echo
     echo "Installation complete."
@@ -95,6 +95,7 @@ if [[ $EUID -ne 0 ]]; then
     echo "Please run as root."
     #exit 1
 fi
+
 
 case "$1" in
     install)
