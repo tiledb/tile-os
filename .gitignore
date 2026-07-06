@@ -2,3 +2,4 @@
 *.jou
 *.log
 .pyenv
+mariadb_backups

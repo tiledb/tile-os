@@ -1,0 +1,12 @@
+[Unit]
+Description=Daily MariaDB Backup and Nextcloud Upload
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=%h/tile-os/backup-scripts
+ExecStart=/bin/bash %h/tile-os/backup-scripts/mariadb_backup.sh
+# Nice to have
+Nice=10
