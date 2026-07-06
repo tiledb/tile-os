@@ -6,6 +6,8 @@ USER="tiledb"
 PASSWORD="T1le-db-word!"
 
 BACKUP_DIR="../resources/mariadb_backups"
+SYNC_BACKUP_DIR="/var/www/html/drive/mariadb_backup"
+
 DATE=$(date +"%Y-%m-%d_%H-%M-%S")
 
 mkdir -p "$BACKUP_DIR"
@@ -46,6 +48,23 @@ python3 mariadb_backup.py \
   --timestamp "$DATE"
 
 deactivate
+
+
+# =========================
+# Sync backup directory
+# =========================
+echo "Synchronizing backups to secondary location..."
+
+mkdir -p "$SYNC_BACKUP_DIR"
+
+rsync -av --delete "$BACKUP_DIR"/ "$SYNC_BACKUP_DIR"/
+
+if [ $? -eq 0 ]; then
+    echo "Backup synchronization completed."
+else
+    echo "WARNING: Backup synchronization failed!"
+fi
+
 
 # =========================
 # Done
